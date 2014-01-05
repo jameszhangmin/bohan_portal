@@ -1,0 +1,51 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="">
+    	<meta name="author" content="shirleydai423@gmail.com">
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+   		<!--link rel="shortcut icon" href="http://v3.bootcss.com/docs-assets/ico/favicon.png"-->
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="@routes.Assets.at("stylesheets/bootstrap.css")" rel="stylesheet">
+		<link href="@routes.Assets.at("stylesheets/bootstrap-theme.css")" rel="stylesheet">
+		<link href="@routes.Assets.at("stylesheets/docs.css")" rel="stylesheet">
+		<link href="@routes.Assets.at("stylesheets/homepage.css")" rel="stylesheet">
+	
+	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.6.2/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	
+	    <!-- Custom styles for this template -->
+	    <link href="@routes.Assets.at("stylesheets/carousel.css")" rel="stylesheet">
+		<style id="holderjs-style" type="text/css"></style>
+	</head>
+    <body>
+        @content
+        
+            <!-- Bootstrap core JavaScript
+		    ================================================== -->
+		    <!-- Placed at the end of the document so the pages load faster -->
+		    <script src="@routes.Assets.at("javascripts/jquery-1.10.2.min.js")"></script>
+		    <script src="@routes.Assets.at("javascripts/bootstrap.min.js")"></script>
+		    <script src="@routes.Assets.at("javascripts/holder.js")"></script>
+			<script type="text/javascript">
+				if ($('#cno').value==''){
+				
+				}
+			
+			</script>
+    </body>
+</html>

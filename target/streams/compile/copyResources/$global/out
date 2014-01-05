@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/zhangmin/work/bohan_portal/conf/application.conf,/Users/zhangmin/work/bohan_portal/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/zhangmin/work/bohan_portal/conf/log4j.properties,/Users/zhangmin/work/bohan_portal/target/scala-2.10/classes/log4j.properties)[0m
+[0m[[0mdebug[0m] [0m	(/Users/zhangmin/work/bohan_portal/conf/META-INF,/Users/zhangmin/work/bohan_portal/target/scala-2.10/classes/META-INF)[0m
+[0m[[0mdebug[0m] [0m	(/Users/zhangmin/work/bohan_portal/conf/routes,/Users/zhangmin/work/bohan_portal/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/zhangmin/work/bohan_portal/conf/META-INF/applicationContext.xml,/Users/zhangmin/work/bohan_portal/target/scala-2.10/classes/META-INF/applicationContext.xml)[0m
