@@ -1,0 +1,74 @@
+@(
+	resultList: List[com.bohan.bohan_dao.domain.Mawbhawb]
+)
+@title = {
+查询结果
+} 
+@main(title) { 
+	<div class="container bs-docs-container">
+		<div class="row">
+			<div class="col-md-12" role="main">
+				<div class="bs-docs-section">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<ol class="breadcrumb">
+								<li><a href="#">首页</a></li>
+								<li class="active">@title</li>
+							</ol>
+							<hr>
+							<div class="page-header">
+							@*
+								<div class="jumbotron about">
+									<h1>@title</h1>
+								</div>
+							*@
+							</div>
+							<table id="queryList" style="width: 100%; background-color: #fffffc;">
+							<thead>
+								<tr>
+									<th>总单号</th>
+									<th>分单号</th>
+									<th>报关完成</th>
+									<th>入库日期</th>
+									<th>计费重量</th>
+									<th>货物状态</th>
+								</tr>
+							</thead>
+							<tbody>
+								@for(result <- resultList) {
+								<tr>
+									<td>@result.getMawb()</td>
+									<td>@result.getHawb()</td>
+									<td>@if(result.getBghx()!=null){
+										@if(result.getBghx()=="1"){
+											完成
+										}else{
+											未完成
+										}
+									}else{
+										UNKNOWN
+									}</td>
+									<td>@result.getInDate()</td>
+									<td>@result.getWeight()</td>
+									<td>@result.getStatus()</td>
+								</tr>
+								}
+							</tbody>
+							<tfoot></tfoot>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		
+		$("#queryList").dataTable({
+	    	"bJQueryUI": true,
+	    	"sPaginationType": "two_button"
+	    }); // show the application list
+	});
+	</script>
+}

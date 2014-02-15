@@ -1,0 +1,36 @@
+/.idea
+/*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
+/RUNNING_PID
+/.settings
+
+
+#Ignore all dotfiles...
+.*
+#except for .gitignore
+!.gitignore
+
+#Ignore Play! working directory#
+db
+dist
+eclipse
+lib/bohan-dao-0.0.1-SNAPSHOT.jar
+lib/bohan-srv-0.0.1-SNAPSHOT.jar
+log
+logs
+modules
+precompiled
+project/project
+project/target
+target/
+tmp
+test-result
+server.pid
+*.iml
+*.eml
+/bin
+project/target/resolution-cache
+project/target/streams

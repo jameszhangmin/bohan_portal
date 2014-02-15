@@ -1,7 +1,264 @@
-@(message: String)
+<!DOCTYPE html>
 
-@main("Welcome to Play") {
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="shirleydai423@@gmail.com">
+	    <!--link rel="shortcut icon" href="http://v3.bootcss.com/docs-assets/ico/favicon.png"-->
+	    <title>首页</title>
+	
+	    <!-- Bootstrap core CSS -->
+	    <link href="@routes.Assets.at("stylesheets/bootstrap.css")" rel="stylesheet">
+		<link href="@routes.Assets.at("stylesheets/bootstrap-theme.css")" rel="stylesheet">
+		<link href="@routes.Assets.at("stylesheets/docs.css")" rel="stylesheet">
+		<link href="@routes.Assets.at("stylesheets/homepage.css")" rel="stylesheet">
+	
+	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.6.2/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	
+	    <!-- Custom styles for this template -->
+	    <link href="@routes.Assets.at("stylesheets/carousel.css")" rel="stylesheet">
+		<style id="holderjs-style" type="text/css"></style>
+	</head>
+  <body  id='homepage'>
+		
+	<header>
+	    <div class="navbar navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">
+	          <div class='col-md-3'>
+				<a href="index.html" class='brand'><img src='@routes.Assets.at("images/base/bh_logo.jpg")' /></a>
+			 </div>
+			 <div class='col-md-9'>
+				 <div class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li class='active'><a href="index.html">首页</a></li>
+					<li class="dropdown">
+					  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">关于我们<b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li class="">
+						  <a href="about-intro.html">公司简介</a>
+						</li>
+						<li class="">
+						  <a href="about-concept.html">公司理念</a>
+						</li>
+						<li class="">
+						  <a href="about-team.html">我们的团队</a>
+						</li>
+						<li class="">
+						  <a href="about-contact.html">联系我们</a>
+						</li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">核心业务<b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li class="">
+						  <a href="business-1.html">国际货代</a>
+						</li>
+						<li class="">
+						  <a href="business-2.html">国际快件</a>
+						</li>
+						<li class="">
+						  <a href="business-3.html">报关报检</a>
+						</li>
+						<li class="">
+						  <a href="business-4.html">仓储服务</a>
+						</li>
+					  </ul>
+					</li>
+					<li><a href="products.html">主要客户</a></li>
+					<li><a href="#">招贤纳士</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li>
+					  <a href="#" class='mark'>收藏本站</a>
+					</li>
+				  </ul>
+				</div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+    </header>
+	
+	<div class="container">
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
 
-    @play20.welcome(message, style = "Java")
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="@routes.Assets.at("images/promotions/homeBanner5.jpg")" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>诚信   专业   高效</h1>
+              <p>&nbsp;</p>
+              <!--p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p-->
+            </div>
+          </div>
+        </div>
 
-}
+		<div class="item">
+         <img src="@routes.Assets.at("images/promotions/homeBanner5.jpg")" alt="Second slide">
+         <div class="container">
+            <div class="carousel-caption">
+              <h1>诚信   专业   高效</h1>
+              <p>&nbsp;</p>
+              <!--p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p-->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="@routes.Assets.at("images/promotions/homeBanner5.jpg")" alt="Third slide">
+         <div class="container">
+            <div class="carousel-caption">
+              <h1>诚信   专业   高效</h1>
+              <p>&nbsp;</p>
+              <!--p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="marketing">
+		
+      <!-- Three columns of text below the carousel -->
+		
+		<div class='row'>
+		<div class="col-sm-3">
+			<a href="#" class="card">
+			  <img src="@routes.Assets.at("images/promotions/homeBanner_s1.jpg")" />
+			  <div class="description">
+				<h3>国际货代</h3>				
+			  </div>
+			</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="#" class="card">
+			  <img src="@routes.Assets.at("images/promotions/homeBanner_s2.jpg")" />
+			  <div class="description">
+				<h3>报关报检</h3>				
+			  </div>
+			</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="#" class="card">
+			  <img src="@routes.Assets.at("images/promotions/homeBanner_s3.jpg")" />
+			  <div class="description">
+				<h3>仓储</h3>				
+			  </div>
+			</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="#" class="card">
+			  <img src="@routes.Assets.at("images/promotions/homeBanner_s4.jpg")" />
+			  <div class="description">
+				<h3>国际快件</h3>				
+			  </div>
+			  <div class='clear'></div>
+			</a>
+		</div>
+	  </div>
+	  
+	  <div class='row'>
+	 
+		<div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">客户查询系统</h3>
+            </div>
+            <div class="panel-body">
+               <form method='post' action='#' id='search-cno'>
+				
+				<textarea name='cno' id='cno' rows="6" cols="60" style="width:100%;" value='请在此输入运单号'></textarea>
+				<div>(输入主运单号、分运单号或业务编号，您即可以查询到相关业务的具体信息，并可以跟踪该票业务和在本公司的操作轨迹以及进出口航班信息。)</div>
+				
+				<button type="button" class="btn btn-default cno-button"> 查 询 </button> 
+			  
+			  </form>
+            </div>
+          </div>
+          
+        </div>
+		 <div class="col-sm-4">
+          <div class="panel panel-default list">
+            <div class="panel-heading">
+              <h3 class="panel-title">公司简介</h3>
+            </div>
+			<div class="panel-body">
+				<marquee direction="up" scrolldelay="300" truespeed="truespeed" height="272" loop="-1">
+					<p>上海博瀚国际货运代理有限公司成立于2005年，现位于中国（上海）自由贸易试验区浦东国际机场综合保税区，公司分别签下了快件仓库和保税仓库，约12000平方米，是一家集国际贸易、空运、海运、快件、报关、仓储为一体的综合性物流企业，公司不仅具有一级货代资质，同时也是中国民用航空国际运输业务许可销售代理人之一,还具有经海关注册批准的专业进出口报关资质，并且被海关认定为A类报关企业。目前，公司正在申请AA类报关企业手续，为公司走向标准化、国际化迈出了坚实的一步。</p>
+					<p>公司凭借完善的国内外货运代理网络，专业提供国际货物的进口、出口的报关和运输等服务；公司拥有进出口经营权，为客户提供进出口贸易代理等增值服务，设计稳妥的外贸代理和国际物流一体化解决方案。</p>
+					<p>我司倡导“诚信、专业、高效”的核心管理理念，秉承“不断创新、持续发展”的经营理念，为了给客户提供更加专业和精细的贴心服务，我们建立了先进的物流信息服务平台，实现了物流供应链各环节的无缝对接，实时信息查询，以降低客户的物流成本。我们以卓越的职业素养，专业的知识技能，高效的团队协作和完善的服务体系积极开创与客户共赢的良好局面。</p>
+				</marquee>
+            </div>
+          </div>
+
+        </div>
+		
+		<div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">联系我们</h3>
+            </div>
+            <div class="panel-body">	
+				<div>上海博瀚国际货运代理有限公司</div>
+				<ul>
+					<li>上海启航路1000号金融中心305室</li>
+					<li>总机：+86-21-68356006</li>
+					<li>传真：+86-21-68356505</li>
+					<li>邮箱：info@@bh-link.com</li>
+				</ul>
+				<div>浦东机场综合保税区仓库<br/>上海浦东机场综合保税区正定路515号A6库区2层<br/>8号仓库</div>
+
+				<div>浦东机场快件仓库<br/>上海第一监管海天五路600号C19仓库</div>
+
+            </div>
+          </div> 
+        </div>
+		
+	  </div>
+	  
+	  
+	 </div>
+      <!-- FOOTER -->
+      <footer class="bs-footer" role="contentinfo">
+       <div class='container'>
+		
+        <div>©上海博瀚国际货运代理有限公司 · 地址：上海浦东新区启航路1000号金融中心305室 · 总机：+86-21-68356006</div>
+      </div>
+
+	  </footer>
+
+    </div><!-- /.container -->
+    
+    <script src="@routes.Assets.at("javascripts/jquery-1.10.2.min.js")"></script>
+	<script src="@routes.Assets.at("javascripts/bootstrap.min.js")"></script>
+	<script src="@routes.Assets.at("javascripts/holder.js")"></script>
+    
+    </body>
+</html>

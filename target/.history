@@ -5,3 +5,12 @@ eclipse
 compile
 run
 exit
+run
+compile
+run
+exit
+compile
+run
+exit
+clean
+exit
