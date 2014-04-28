@@ -7,12 +7,6 @@
 /RUNNING_PID
 /.settings
 
-
-#Ignore all dotfiles...
-.*
-#except for .gitignore
-!.gitignore
-
 #Ignore Play! working directory#
 db
 dist
@@ -32,5 +26,8 @@ server.pid
 *.iml
 *.eml
 /bin
-project/target/resolution-cache
-project/target/streams
+
+#Ignore all dotfiles...
+.*
+#except for .gitignore
+!.gitignore

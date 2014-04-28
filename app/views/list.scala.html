@@ -27,30 +27,48 @@
 							<thead>
 								<tr>
 									<th>总单号</th>
-									<th>分单号</th>
-									<th>报关完成</th>
+									<th>进境日期</th>
 									<th>入库日期</th>
-									<th>计费重量</th>
-									<th>货物状态</th>
+									<th>货物件数</th>
+									<th>货物重量</th>
+									<th>单证齐全</th>
+									<th>委托报关</th>
+									<th>放行</th>
+									<th>国内配送</th>
 								</tr>
 							</thead>
 							<tbody>
 								@for(result <- resultList) {
 								<tr>
 									<td>@result.getMawb()</td>
-									<td>@result.getHawb()</td>
-									<td>@if(result.getBghx()!=null){
-										@if(result.getBghx()=="1"){
-											完成
-										}else{
-											未完成
-										}
-									}else{
-										UNKNOWN
-									}</td>
+									<td>@result.getJjDate()</td>
 									<td>@result.getInDate()</td>
-									<td>@result.getWeight()</td>
-									<td>@result.getStatus()</td>
+									<td>@result.getPieceShould()</td>
+									<td>@result.getWeightGross()</td>
+									<td>
+										@if(result.getImWtyw()!=null && result.getImWtyw().getDzdq()!=null){
+											@if(result.getImWtyw().getDzdq()=="1"){
+											已到齐
+											}else{
+											未到齐
+											}
+										}else{
+											N/A
+										}
+									</td>
+									<td>
+									@if(result.getImWtyw()!=null && result.getImWtyw().getWtbg()!=null){
+											@if(result.getImWtyw().getWtbg()=="1"){
+											已报关
+											}else{
+											未报关
+											}
+										}else{
+											N/A
+										}
+									</td>
+									<td>@if(utils.StringHelper.isFangxing(result)){放行}else{未放行}</td>
+									<td>@utils.StringHelper.getEMS(result)</td>
 								</tr>
 								}
 							</tbody>
